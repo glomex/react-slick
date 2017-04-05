@@ -71,7 +71,7 @@ var helpers = {
     if(!props.autoplay) {
       this.pause();
     } else {
-      this.autoPlay();
+      this.autoPlay(true);
     }
 
     this.setState({
@@ -332,11 +332,11 @@ var helpers = {
 
     this.slideHandler(nextIndex);
   },
-  autoPlay: function () {
+  autoPlay: function (force) {
     if (this.state.autoPlayTimer) {
       clearTimeout(this.state.autoPlayTimer);
     }
-    if (this.props.autoplay) {
+    if (force || this.props.autoplay) {
       this.setState({
         autoPlayTimer: setTimeout(this.play, this.props.autoplaySpeed)
       });
