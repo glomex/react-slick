@@ -1,5 +1,7 @@
-# react-slick
+# React Slick (System:MES,Squad:publisher,Type:Component)
+Forked version of slick component
 
+## Build
 [![Join the chat at https://gitter.im/akiran/react-slick](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/akiran/react-slick?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
